@@ -38,7 +38,7 @@ window.addEventListener('load', function(){
                 showConfirmButton: true,
                 
               })
-              location.href = '../descarga.html';
+              window.location.href="../San-marco-pagina/descarga.html";
             }else{
                 Swal.fire({
                     position: 'center',

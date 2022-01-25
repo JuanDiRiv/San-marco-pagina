@@ -36,7 +36,7 @@ window.addEventListener('load', function(){
                 icon: 'success',
                 title: 'Your work has been saved',
                 showConfirmButton: true,
-                timer: 1500
+                
               })
               location.href = '../descarga.html';
             }else{
@@ -45,7 +45,7 @@ window.addEventListener('load', function(){
                     icon: 'error',
                     title: 'Usuario o contraseña incorrecta',
                     showConfirmButton: true,
-                    timer: 1500
+                    
                 })
     
             }

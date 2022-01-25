@@ -660,7 +660,8 @@ a.correo {
   }
   .logo {
     width: 36%;
-    font-size: 20px;
+    font-size: 20px; 
+    
   }
   .scroll-navigation-ins {
     width: 230px;

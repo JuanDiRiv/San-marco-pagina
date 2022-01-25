@@ -12,6 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/modal.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -19,6 +20,7 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -28,7 +30,7 @@
 	<header class="full-reset header">
 		<!--======================================== Logo(Nombre INS) ========================================-->
 		<div class="full-reset logo">
-			<span class="hidden-lg hidden-md nombreMobile"> San Marco CDI  </span>
+			<span class="hidden-lg hidden-md nombreMobile"> San Marco CDI </span>
 			<span class="hidden-xs hidden-sm agrandar">San Marco Club de Desarrollo Infantil</span>
 		</div>
 		<!--======================================== Links de navegación ========================================-->
@@ -88,12 +90,12 @@
 				class="fa fa-ellipsis-v"></i></a>
 	</header>
 	<!--======================================== Logo & Lema ========================================-->
-	<section class="full-reset font-cover" style="background-image: url(./assets/img/fondo\ pantalla.jpeg);">
+	<section class="full-reset font-cover" style="background-image: url(./assets/img/Izada\ fondo.jpg);">
 		<div class="full-reset" style="height: 100%; background-color: rgba(255,255,255,.6); padding: 60px 0;">
 			<!-- <h1 class="text-center titles">San Marco Club de Desarrollo Infantil</h1> -->
 			<figure class="Logo-Ins-Index tamanio">
-				<img src="./assets/img/logo san marco.png" alt="Logo" class="img-responsive"> 	
-				
+				<img src="./assets/img/logo san marco.png" alt="Logo" class="img-responsive">
+
 			</figure>
 			<p class="lead text-center">
 				<!-- "Formando generaciones victoriosas" -->
@@ -275,11 +277,63 @@
 			<p>Cons.conducta</p>
 		</a>
 
-		<a href="#!" class="open-link-newTab">
+		<a class="cta">
 			<i class="fa fa-download"></i>
 			<p>Descargas</p>
 		</a>
 	</section>
+
+	<!-- ---------------------------- ventana Modal ---------------------------- -->
+	
+	<div class="modal-container">
+		<div class="modal modal-close">
+			<p class="close"><i class="far fa-times-circle cerrar"></i></p>
+			<img src="./assets/img/undraw_tasting_re_fv9d.svg" alt="">
+			<div class="modal-textos">
+
+				<div class="ingreso-cont">
+					<form>
+
+						<h1>Ingresar</h1>
+						<label class="labelUsuario">
+							Usuario:
+							<input type="text" placeholder="Usuario" class="item1" id="usuario">
+						</label><br>
+						<label class="labelContraseña">
+							Contraseña:
+							<input type="password" placeholder="Contraseña" class="item2" id="password">
+						</label>
+						<br>
+						<button type="submit" class="btn">Ingresar</button>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- -------------------------- Fin ventana Modal -------------------------- -->
+
 	<!--======================================== Footer ========================================-->
 	<footer class="full-reset footer">
 		<div class="full-reset" style="padding: 15px 0;">
@@ -319,6 +373,8 @@
 			</div>
 		</div>
 	</footer>
+
+<script src="./js/app.js"></script>
 </body>
 
 </html>

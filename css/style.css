@@ -290,9 +290,10 @@ a.correo {
 ========================================================================================================*/
 .Logo-Ins-Index img {
   height: 400px;
-  float: right;
+  /* float: right; */
   position: relative;
-  bottom: 83px;
+  bottom: -400px;
+    left: 711px;
  
  
 }

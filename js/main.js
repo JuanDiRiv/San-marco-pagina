@@ -48,24 +48,67 @@ $(document).ready(function(){
       $('.btn-up').fadeOut();
     }
   });
-	/***** Mapa de GoogleMaps del Instituto *****/
-	// var map;
-	// function initialize() {
-	//   var myLatlng = new google.maps.LatLng(13.869727, -88.628943);
-	//   var mapOptions = {
-	//     zoom: 16,
-	//     center: new google.maps.LatLng(13.869727, -88.628943),
-	//     mapTypeId: google.maps.MapTypeId.HYBRID
-	//   };
-	//   map = new google.maps.Map(document.getElementById('mapa-ins'),
-	//     mapOptions);
-	//   var marker = new google.maps.Marker({
-	//     position: myLatlng,
-	//     map: map,
-	//     title: 'Instituto Nacional de Sensuntepeque'
-	//   });
-	// }
-	// google.maps.event.addDomListener(window, 'load', initialize);
+
 
 
 });
+window.addEventListener('load', function(){
+
+    let cerrar = document.querySelectorAll('.close')[0];
+    let abrir = document.querySelectorAll('.cta')[0];
+    let modal = document.querySelectorAll('.modal')[0];
+    let modalC = document.querySelectorAll('.modal-container')[0];
+    const formulario =  this.document.forms[0];
+    let inputUsuario = document.querySelector("#usuario");
+    let inputContrasenia = document.querySelector("#password");
+    
+    abrir.addEventListener('click', function(e) {
+        e.preventDefault();
+        modalC.style.opacity ="1"
+        modalC.style.visibility = "visible"
+        modal.classList.toggle("modal-close")
+    });
+    
+    cerrar.addEventListener('click', function(e) {
+        e.preventDefault();
+            modal.classList.toggle("modal-close")
+            modalC.style.opacity ="0"
+            modalC.style.visibility = "hidden"
+    
+    
+       
+    })
+    
+    formulario.addEventListener('submit', function(e){
+        e.preventDefault();
+        let usuario = inputUsuario.value;
+        let contrasenia = inputContrasenia.value;
+    
+        if(usuario == "admin" && contrasenia == "admin"){
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Your work has been saved',
+                showConfirmButton: true,
+                
+              })
+              setTimeout(function(){
+
+                  location.href="../descarga.html";
+              },2000)
+             
+            
+        
+            }else{
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Usuario o contraseña incorrecta',
+                    showConfirmButton: true,
+                    
+                })
+    
+            }
+            formulario.reset();
+    })
+    });

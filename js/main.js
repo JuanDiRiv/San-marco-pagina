@@ -39,6 +39,7 @@ $(document).ready(function () {
     );
     return false;
   });
+  
   /***** boton ir arriba *****/
   $(".btn-up").click(function () {
     $("body,html").animate({ scrollTop: "0px" }, 300);

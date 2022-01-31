@@ -34,12 +34,12 @@ h1,
 h2,
 h3,
 h4 {
-  color: #ea5c0b; 
-  
+  color: #ea5c0b;
 }
 
 p {
   font-family: "ArialBold", sans-serif;
+  /* text-align: justify; */
 }
 video {
   width: 100%;
@@ -257,6 +257,9 @@ video {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
+.contacto {
+  color: #2e4b9a;
+}
 .links-footer,
 .subtitles-footer {
   padding-left: 50px;
@@ -293,15 +296,22 @@ a.correo {
 /*=======================================================================================================
 =                                              Estilos index                                            =
 ========================================================================================================*/
-.Logo-Ins-Index img {
-  
- 
-   height:400px;
-    margin: 0 auto;
-    position: relative;
-    top: 400px;
-  
+.descarga-btn{
+  text-align: center;
 }
+
+.Logo-Ins-Index img {
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 400px;
+}
+/* .img-niños{
+  
+  position: relative;
+  margin: 0 ;
+  float: left;
+} */
 .icon-index {
   font-size: 190px;
   margin: 15px;
@@ -370,7 +380,6 @@ a.correo {
   font-size: 18px;
 }
 
- 
 /************** Estilos eventos***************/
 .events-ins {
   position: relative;
@@ -379,8 +388,48 @@ a.correo {
   padding: 20px 0;
   height: auto;
   background-color: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             Estilos Admisiones                          */
+/* -------------------------------------------------------------------------- */
+.containerRequisito {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin-left: 200px;
+
+}
+p.lead{
+  margin-left: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  conocenos                                 */
+/* -------------------------------------------------------------------------- */
+.conocenos{
+text-align: justify;
+}
+.logoAzul{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height:250px;
+  display: block;
+  margin: 0 auto;
+}
+ul.conocenos-ul{
+  margin-left: -20px;
   
 }
+
+
+
+
+
+
 /*=======================================================================================================
 =                                            Estilos institucion                                        =
 ========================================================================================================*/
@@ -398,6 +447,12 @@ a.correo {
 }
 .item {
   max-width: 100%;
+  max-height: 100%;
+  background-color: #e6bda6;
+}
+
+.item0 {
+  max-width: 300px;
   max-height: 100%;
   background-color: #e6bda6;
 
@@ -588,6 +643,7 @@ a.correo {
   .mega-menu ul {
     margin-bottom: 25px;
   }
+ 
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .mapa {
@@ -612,6 +668,20 @@ a.correo {
   .containers {
     width: 100%;
   }
+  .containerRequisito {
+    display: flex;
+    flex-direction: column;
+    margin: 10px ;
+
+  }
+ 
+  p.lead{
+    margin: 10px;
+    font-size:16px;
+  }
+  p.conocenos{
+    font-size:16px;
+  }
  
 }
 /* col-sm */
@@ -628,13 +698,12 @@ a.correo {
   .scroll-navigation-ins {
     width: 235px;
   }
- */
-  .logo {
+   .logo {
     margin-left: 10px;
     font-size: 20px;
     text-align: left;
   }
- 
+
   .mapa {
     width: 100%;
     height: 490px;
@@ -649,6 +718,18 @@ a.correo {
   .navigation ul li a {
     font-size: 16px;
   }
+  .containerRequisito {
+    display: flex;
+    flex-direction: column;
+    margin: 10px ;
+
+  }
+ 
+  p.lead{
+    margin: 10px;
+    font-size:21px;
+
+  }
 }
 
 /* col-md */
@@ -658,8 +739,7 @@ a.correo {
   }
   .logo {
     width: 36%;
-    font-size: 20px; 
-    
+    font-size: 20px;
   }
   .scroll-navigation-ins {
     width: 230px;
@@ -683,10 +763,20 @@ a.correo {
   .navigation ul li a {
     font-size: 16px;
   }
+  .containerRequisito {
+    margin-left: 10px ;
+
+  }
+ 
+  p.lead{
+    margin: 10px;
+    
+
+  }
 }
 
 /* col-lg */
-@media (min-width: 1200px) and (max-width: 1439px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
   .navigation {
     width: 60%;
   }
@@ -713,4 +803,15 @@ a.correo {
   .navigation ul li a {
     font-size: 16px;
   }
+  .containerRequisito {
+    margin-left: 10px ;
+
+  }
+ 
+  p.lead{
+    margin: 10px;
+    
+
+  }
 }
+

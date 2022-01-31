@@ -130,6 +130,13 @@ width: 180px
     top: 8px;
   }
 }
+@media (min-width: 479px) and (max-width: 787px) {
+.img-niños{
+  display: none;
+}
+
+
+}
 @media (min-width: 603px) and (max-width: 776px) {
   .modal {
     width: 45%;

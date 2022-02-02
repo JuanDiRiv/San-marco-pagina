@@ -5,22 +5,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>San Marco CDI</title>
-	<link rel="icon" href="./assets/img/SOl.png">
+	<link rel="icon" href="./SOl.png">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v.1./css/all.css"
+		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/galeria.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
 		integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-
-	<link rel="stylesheet" href="css/style.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
 	<script src="js/modernizr.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="js/main.js"></script> -->
+	<script src="js/galeria.js"></script>
+	
 </head>
 
 
@@ -49,7 +52,7 @@
 		<div class="full-reset mega-menu">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-">
 						<span class="full-reset titles">Recursos educativos</span>
 						<ul class="list-unstyled full-reset">
 							<li><a href="#!" class="open-link-newTab"><i class="fa fa-search"></i>&nbsp; Buscar en
@@ -58,7 +61,7 @@
 									Plataforma (MOODLE)</a></li>
 						</ul>
 					</div>
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-">
 						<span class="full-reset titles">Enlaces importantes</span>
 						<ul class="list-unstyled full-reset">
 							<li><a href="#!" class="open-link-newTab"><i class="fa fa-university"></i>&nbsp; MINED</a>
@@ -71,7 +74,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-">
 						<span class="full-reset titles">Archivos</span>
 						<ul class="list-unstyled full-reset">
 							<li><a href="#!"><i class="fa fa-star-o"></i>&nbsp; Promociones INS</a></li>
@@ -89,104 +92,114 @@
 				class="fa fa-ellipsis-v"></i></a>
 	</header>
 	<!--======================================== contenido de la pagina ========================================-->
-	<section class="full-reset" style="min-height: 850px;">
-		<div class="lead">
-			<h2 class="text-center titles">¿Quiénes Somos?</h2>
-			<p class=" text-center lead ">
-				Somos una Institución que busca brindar un servicio educativo formando a los niños de manera integral
-				en:
-
-			</p>
-			<br><br>
-			<article class="containerCon">
-				
-
-
-					<ul >
-						<li class="con1 con0">
-							<p class="conocenos">
-								Valores fundamentales que los ayude a fortalecer su
-								carácter para afrontar nuevos retos.<br><br>
-
-							</p>
-						</li>
-						<li class="con1 con0">
-							<p class="conocenos">
-								Fomentar el desarrollo integral del niño, el
-								fortalecimiento de su independencia y resolución de conflictos y el mejoramiento de su
-								autoestima mediante actividades que le permitan resolver situaciones de la vida
-								diaria.<br><br>
-							</p>
-						</li>
-						
-					</ul>
-					<ul>
-						
-						<li class="con2 con0">
-							<p class="conocenos">
-								Nuestro programa educativo cuenta con inglés
-								intensivo desde el nivel inicial.<br><br>
-							</p>
-						</li>
-						<li class="con2 con0">
-							<p class="conocenos">
-								Ofrecer al niño un ambiente adecuado en el que
-								se utilicen herramientas didácticas que le permitan desarrollarse de manera lúdica como
-								ser integral, en todas sus capacidades físicas, afectivas, sociales e
-								intelectuales.<br><br>
-							</p>
-						</li>
-					</ul>
-
-					<br>
-
-
-
-
-
-
-
-			
-			</article>
+	<main>
+		<div class="overlay">
+			<div class="slideshow">
+				<span class="btn_cerrar">&times;</span>
+				<div class="botones atras">
+					<i class="fas fa-arrow-circle-left mdi"></i>
+				</div>
+				<div class="botones adelante">
+					<i class="fas fa-arrow-circle-right mdi"></i>
+				</div>
+				<img src="" alt="" id= "img_slideshow">
+			</div>
+		</div>
+		
+		<div class="encabezado">
+			<h1>Mis fotos</h1>
 		</div>
 
-		<section class="containerLogoAzul">
-			<div class="niñoCon">
+		<section class="galeria">
+			<div class="columnaGal">
+				<img src="./imgs/1.jpeg" alt="" data-img-mostrar="0">
+				<img src="./imgs/2.jpeg" alt="" data-img-mostrar="1">
+				<img src="./imgs/3.jpeg" alt="" data-img-mostrar="2">
+				<img src="./imgs/4.jpeg" alt="" data-img-mostrar="3">
+				<img src="./imgs/5.jpeg" alt="" data-img-mostrar="4">
+				<img src="./imgs/6.jpeg" alt="" data-img-mostrar="5">
+				<img src="./imgs/7.jpeg" alt="" data-img-mostrar="6">
+				<img src="./imgs/8.jpeg" alt="" data-img-mostrar="7">
+				<img src="./imgs/9.jpeg" alt="" data-img-mostrar="8">
 
-				<img src="./assets/img/niña 4.png" alt="">
 			</div>
-
-			<div>
-				<img class="logoAzul" src="./assets/img/Logo azul san marco.jpeg" alt="logo">
-			</div> 
-
-			<div class="niñoCon">
-<img src="./assets/img/niños fondo2.png" alt="">
+			<div class="columnaGal">
+				<img src="./imgs/10.jpeg" alt="" data-img-mostrar="9">
+				<img src="./imgs/11.jpeg" alt="" data-img-mostrar="10">
+				<img src="./imgs/12.jpeg" alt="" data-img-mostrar="11">
+				<img src="./imgs/13.jpeg" alt="" data-img-mostrar="12">
+				<img src="./imgs/14.jpeg" alt="" data-img-mostrar="13">
+				<img src="./imgs/15.jpeg" alt="" data-img-mostrar="14">
+				<img src="./imgs/16.jpeg" alt="" data-img-mostrar="15">
+				<img src="./imgs/17.jpeg" alt="" data-img-mostrar="16">
+				<img src="./imgs/18.jpeg" alt="" data-img-mostrar="17">
 			</div>
+			
+			<div class="columnaGal">
+				<img src="./imgs/19.jpeg" alt="" data-img-mostrar="18">
+				<img src="./imgs/20.jpeg" alt="" data-img-mostrar="19">
+				<img src="./imgs/21.jpeg" alt="" data-img-mostrar="20">
+				<img src="./imgs/22.jpeg" alt="" data-img-mostrar="21">
+				<img src="./imgs/23.jpeg" alt="" data-img-mostrar="22">
+				<img src="./imgs/24.jpeg" alt="" data-img-mostrar="23">
+				<img src="./imgs/25.jpeg" alt="" data-img-mostrar="24">
+				<img src="./imgs/26.jpeg" alt="" data-img-mostrar="25">
+				<img src="./imgs/27.jpeg" alt="" data-img-mostrar="26">
+			</div>
+			
+			<div class="columnaGal">
+				<img src="./imgs/28.jpeg" alt="" data-img-mostrar="27">
+				<img src="./imgs/29.jpeg" alt="" data-img-mostrar="28">
+				<img src="./imgs/30.jpeg" alt="" data-img-mostrar="29">
+				<img src="./imgs/31.jpeg" alt="" data-img-mostrar="30">
+				<img src="./imgs/32.jpeg" alt="" data-img-mostrar="31">
+				<img src="./imgs/33.jpeg" alt="" data-img-mostrar="32">
+				<img src="./imgs/34.jpeg" alt="" data-img-mostrar="33">
+				<img src="./imgs/35.jpeg" alt="" data-img-mostrar="34">
+				<img src="./imgs/36.jpeg" alt="" data-img-mostrar="35">
+			</div>
+			<div class="columnaGal">
+				<img src="./imgs/37.jpeg" alt="" data-img-mostrar="36">
+				<img src="./imgs/38.jpeg" alt="" data-img-mostrar="37">
+				<img src="./imgs/39.jpeg" alt="" data-img-mostrar="38">
+				<img src="./imgs/40.jpeg" alt="" data-img-mostrar="39">
+				<img src="./imgs/41.jpeg" alt="" data-img-mostrar="40">
+				<img src="./imgs/42.jpeg" alt="" data-img-mostrar="41">
+				<img src="./imgs/43.jpeg" alt="" data-img-mostrar="42">
+				<img src="./imgs/44.jpeg" alt="" data-img-mostrar="43">
+				<img src="./imgs/45.jpeg" alt="" data-img-mostrar="44">
+			</div>
+			
+
 		</section>
 
-	</section>
+
+
+
+
+
+	</main>
 	<!--======================================== Footer ========================================-->
 	<footer class="full-reset footer">
-		<div class="full-reset" style="padding: 15px 0;">
+		<div class="full-reset" style="padding: 1px 0;">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-">
 						<h4 class="titles text-center contacto">Visitenos en</h4>
-						<p class="text-center">Calle 11Sur No. 10-152 vereda canelon, antiguo centro educativo y
+						<p class="text-center">Calle 11Sur No. 10-12 vereda canelon, antiguo centro educativo y
 							cultural canelón.</p>
 					</div>
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-">
 						<h4 class="titles text-center contacto">Contactenos</h4>
 						<p class="text-center ">Tel1: <a class="tel"
-								href="https://api.whatsapp.com/send?phone=57311%20566%209762">311 5669762 <i
+								href="https://api.whatsapp.com/send?phone=7311%2066%209762">311 669762 <i
 									class="fab fa-whatsapp "></i></a> <br> Tel2: <a class="tel"
-								href="https://api.whatsapp.com/send?phone=573114852071">3114852071 <i
+								href="https://api.whatsapp.com/send?phone=7311482071">311482071 <i
 									class="fab fa-whatsapp "></i></a><br> Correo Electrónico: <a class="correo"
 								href="mailto:sanmarco_cdi@hotmail.com">sanmarco_cdi@hotmail.com <i
 									class="far fa-envelope"></i></a> </p>
 					</div>
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-">
 						<h4 class="titles subtitles-footer contacto">Siguenos en</h4>
 						<ul class="list-unstyled links-footer">
 							<li><a href="https://www.facebook.com/Sanmarcocdi" class="open-link-newTab"><i

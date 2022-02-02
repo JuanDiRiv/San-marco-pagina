@@ -41,6 +41,18 @@ p {
   font-family: "ArialBold", sans-serif;
   /* text-align: justify; */
 }
+nav ul li a:before{
+  content: " ";
+  background-color: #0d47a1;
+  position: absolute;
+  bottom: 6px;
+  height: 0px;
+  width: 0px;
+}
+nav ul li a:hover::before{
+  width: 100%;
+  height: 3px;
+}
 video {
   width: 100%;
   height: auto;
@@ -296,7 +308,7 @@ a.correo {
 /*=======================================================================================================
 =                                              Estilos index                                            =
 ========================================================================================================*/
-.descarga-btn{
+.descarga-btn {
   text-align: center;
 }
 
@@ -396,39 +408,56 @@ a.correo {
 .containerRequisito {
   display: flex;
   align-content: center;
-  justify-content: space-around;
-  margin-left: 200px;
 
+  justify-content: space-around;
 }
-p.lead{
-  margin-left: 10px;
+.titlesAdm {
+  text-align: center;
+  font-size: 30px;
+  color: #ea5c0b;
+}
+
+.containerImgs {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                  conocenos                                 */
 /* -------------------------------------------------------------------------- */
-.conocenos{
-text-align: justify;
-}
-.logoAzul{
+
+.logoAzul {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  height:250px;
-  display: block;
+  height: 250px;
+  /* display: block;
+  margin: 0 auto; */
+}
+.containerCon {
+  display: flex;
+
+  justify-content: space-around;
+
+  width: 1700px;
+  height: 300px;
+  /* outline: crimson solid 1px; */
   margin: 0 auto;
 }
-ul.conocenos-ul{
-  margin-left: -20px;
-  
+.con0 {
+  max-width: 600px;
+  text-align: justify;
 }
-
-
-
-
-
+.containerLogoAzul {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 /*=======================================================================================================
 =                                            Estilos institucion                                        =
@@ -643,7 +672,6 @@ ul.conocenos-ul{
   .mega-menu ul {
     margin-bottom: 25px;
   }
- 
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .mapa {
@@ -662,27 +690,39 @@ ul.conocenos-ul{
     height: 50px;
     margin-left: 10px;
   }
-  .item {
+  .item0 {
     max-width: 100%;
   }
   .containers {
     width: 100%;
   }
   .containerRequisito {
-    display: flex;
     flex-direction: column;
-    margin: 10px ;
+    margin: 10px;
+    padding-right: 20px;
+  }
+
+  p.lead {
+    margin: 10px;
+    font-size: 16px;
+  }
+  p.conocenos {
+    font-size: 16px;
+  }
+
+  .containerCon {
+    width: 100%;
+    padding-right: 40px;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  .con0 {
+    max-width: 100%;
+  }
+  nav ul li a:before{
+background-color: transparent;
 
   }
- 
-  p.lead{
-    margin: 10px;
-    font-size:16px;
-  }
-  p.conocenos{
-    font-size:16px;
-  }
- 
 }
 /* col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -698,7 +738,7 @@ ul.conocenos-ul{
   .scroll-navigation-ins {
     width: 235px;
   }
-   .logo {
+  .logo {
     margin-left: 10px;
     font-size: 20px;
     text-align: left;
@@ -712,7 +752,7 @@ ul.conocenos-ul{
     width: 100%;
   }
 
-  .item {
+  .item0 {
     max-width: 100%;
   }
   .navigation ul li a {
@@ -721,14 +761,20 @@ ul.conocenos-ul{
   .containerRequisito {
     display: flex;
     flex-direction: column;
-    margin: 10px ;
-
-  }
- 
-  p.lead{
     margin: 10px;
-    font-size:21px;
+  }
 
+  p.lead {
+    margin: 10px;
+    font-size: 21px;
+  }
+  .containerCon {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .con0 {
+    max-width: 320px;
   }
 }
 
@@ -757,21 +803,27 @@ ul.conocenos-ul{
   .containers {
     width: 100%;
   }
-  .item {
+  .item0 {
     max-width: 100%;
   }
   .navigation ul li a {
     font-size: 16px;
   }
   .containerRequisito {
-    margin-left: 10px ;
-
-  }
- 
-  p.lead{
-    margin: 10px;
+    margin-left: 10px;
     
+  }
 
+  p.lead {
+    margin: 10px;
+  }
+  .containerCon {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .con0 {
+    max-width: 400px;
   }
 }
 
@@ -797,21 +849,50 @@ ul.conocenos-ul{
     width: 100%;
   }
 
-  .item {
+  .item0 {
     max-width: 100%;
   }
   .navigation ul li a {
     font-size: 16px;
   }
   .containerRequisito {
-    margin-left: 10px ;
-
+    margin-left: 10px;
   }
- 
-  p.lead{
-    margin: 10px;
-    
 
+  p.lead {
+    margin: 10px;
+  }
+  .containerCon {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .con0 {
+    max-width: 400px;
   }
 }
-
+@media (min-width: 1441px) and (max-width: 1700px) {
+  .containerCon {
+    width: 100%;
+    height: 300px;
+  }
+  .con0 {
+    max-width: 600px;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                          media queries niños 3 y 4                         */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 801px) and (max-width: 1101px) {
+  .niño4 {
+    display: none;
+  }
+}
+@media (min-width: 551px) and (max-width: 851px) {
+  .niñoCon {
+    display: none;
+  }
+  .containerLogoAzul {
+    padding-bottom: 40px;
+  }
+}

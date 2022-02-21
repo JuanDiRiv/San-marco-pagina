@@ -558,6 +558,11 @@ a.correo {
   border: 1px dashed #efcdcd;
   margin: 10px 0;
 }
+.gallery2 img {
+  width:200px;
+  height:150px;
+
+}
 .tile-gallery img {
   max-width: 200px;
   max-height: 200px;

@@ -6,7 +6,70 @@
   outline: 0;
   box-sizing: border-box;
 }
+/* -------------------------------------------------------------------------- */
+/*                                 navegacion                                 */
+/* -------------------------------------------------------------------------- */
+main {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.navegacion {
 
+  background-color: #ea5c0b;
+ height:43px;
+width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+}
+.nav_items{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 0 ;
+  list-style: none;
+  margin-right: 30px;
+
+ 
+}
+.nav_items li{
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin: 0 40px;
+}
+.nav_items li a{
+  
+  text-decoration: none;
+  font-size:  22px;
+  color: #fff;
+}
+.nav_items li a:hover{
+  color: #0d47a1;
+}
+.btn_menu{
+  margin-right: 30px;
+  font-size:25px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+
+}
+ul.show{
+top: 40px;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   galeria                                  */
+/* -------------------------------------------------------------------------- */
 .encabezado {
   text-align: center;
   padding: 20px 0;
@@ -152,10 +215,51 @@
 .mdi {
   pointer-events: none;
 }
+@media screen and (max-width:952px){
+  .nav_items li a{
+font-size: 16px;
 
+  }
+  
+}
+@media screen and (max-width:768px){
+  .navegacion{
+    
+    width: 100%;
+    position:fixed;
+
+  }
+}
+@media screen and (max-width:858px){
+.navegacion{
+  height:40px
+}
+  
+  .btn_menu{
+    display: inline-flex;
+    margin:0 auto;
+  }
+  .nav_items{
+    position:fixed;
+    width: 100%;
+    background-color: #ea5c0b;
+    /* height: calc(100%-65px); */
+    top:-100vh;
+    text-align: center;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+
+}
 @media screen and (max-width: 800px) {
   .columnaGal {
-    flex: 50%;
+    flex: 33%;
     max-width: 50%;
   }
   .botones {
@@ -172,9 +276,8 @@
   }
 }
 @media screen and (max-width: 600px) {
-   .columnaGal{
-       flex: 100%;
-       max-width: 100%;
-
-   }
+  .columnaGal {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

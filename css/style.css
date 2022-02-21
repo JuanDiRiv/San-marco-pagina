@@ -563,7 +563,11 @@ a.correo {
   max-height: 200px;
   margin: 15px auto;
   display: block;
-  border-radius: 50%;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
 }
 .tile-gallery p {
   color: #000000;
@@ -619,7 +623,7 @@ a.correo {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
-    z-index: 99;
+    z-index: 10000;
   }
   .show-navigations {
     pointer-events: auto;

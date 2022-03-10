@@ -87,7 +87,7 @@ video {
   background: transparent;
   width: 29px;
   height: auto;
-  color: rgb(226, 112, 5);
+  color: #0d47a1;
   line-height: 25px;
   font-size: 30px;
   text-align: center;
@@ -257,6 +257,15 @@ video {
 }
 
 /*************** Estilos del pie de pagina ***************/
+
+.footer2 {
+  clear: both;
+  color: #fff;
+  background-color: #ea5c0b;
+  position: absolute;
+  bottom: 0;
+ 
+}
 .footer {
   clear: both;
   color: #fff;

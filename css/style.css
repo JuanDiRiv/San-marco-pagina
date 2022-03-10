@@ -51,6 +51,7 @@ nav ul li a:before{
 }
 nav ul li a:hover::before{
   width: 100%;
+  right: -3px;
   height: 3px;
 }
 video {
@@ -275,10 +276,12 @@ video {
 .links-footer,
 .subtitles-footer {
   padding-left: 50px;
+  
 }
 
 .links-footer li a {
   color: #fff;
+  
 }
 .links-footer li a:hover {
   color: #2e4b9a;
@@ -288,7 +291,7 @@ video {
 .links-footer li a:focus {
   outline: none;
   text-decoration: none;
-  color: #2e4b9a;
+  /* color: #2e4b9a; */
 }
 
 a.tel {
@@ -668,6 +671,7 @@ a.correo {
   .subtitles-footer {
     padding-left: 0;
     text-align: center;
+    
   }
   #mapa-ins {
     margin: 0 auto;

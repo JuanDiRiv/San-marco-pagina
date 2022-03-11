@@ -41,6 +41,9 @@ p {
   font-family: "ArialBold", sans-serif;
   /* text-align: justify; */
 }
+a{
+  text-decoration: none;
+}
 nav ul li a:before{
   content: " ";
   background-color: #0d47a1;
@@ -258,7 +261,7 @@ video {
 
 /*************** Estilos del pie de pagina ***************/
 
-.footer2 {
+.footer2   {
   clear: both;
   color: #fff;
   background-color: #ea5c0b;
@@ -300,7 +303,7 @@ video {
 .links-footer li a:focus {
   outline: none;
   text-decoration: none;
-  /* color: #2e4b9a; */
+  color: #2e4b9a;
 }
 
 a.tel {
@@ -330,12 +333,7 @@ a.correo {
   position: relative;
   top: 400px;
 }
-/* .img-niños{
-  
-  position: relative;
-  margin: 0 ;
-  float: left;
-} */
+
 .icon-index {
   font-size: 190px;
   margin: 15px;
@@ -745,6 +743,10 @@ a.correo {
 background-color: transparent;
 
   }
+  .footer2{
+    position: relative;
+    height: auto;
+  }
 }
 /* col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -798,6 +800,10 @@ background-color: transparent;
   .con0 {
     max-width: 320px;
   }
+  .footer2{
+    position: relative;
+    height: auto;
+  }
 }
 
 /* col-md */
@@ -846,6 +852,10 @@ background-color: transparent;
   }
   .con0 {
     max-width: 400px;
+  }
+  .footer2{
+    position: relative;
+    height: auto;
   }
 }
 
@@ -900,6 +910,10 @@ background-color: transparent;
   }
   .con0 {
     max-width: 600px;
+  }
+  .footer2{
+    position: relative;
+    height: auto;
   }
 }
 /* -------------------------------------------------------------------------- */
